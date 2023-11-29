@@ -1,6 +1,3 @@
-ESX = exports.es_extended:getSharedObject()
-
-
 RegisterNetEvent("krs-shop:addItem", function(item)
     local source = source
     local ox_inventory = exports.ox_inventory
