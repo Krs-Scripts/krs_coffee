@@ -2,29 +2,29 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 
-
+name 'krs_coffee'
 author 'Karos#7804'
-description 'Krs Coffee'
-version  "1.0.1"
-
-shared_scripts {
-
-	'@ox_lib/init.lua',
-	'shared/*.lua',
-}
+version "1.0.0"
 
 client_scripts {
-
-	'client/*.lua'
+    
+    'client/*.lua'
 }
 
 server_scripts {
-	
-	'server/*.lua',
+
+    'server/*.lua'
+}
+
+shared_scripts {
+
+    '@es_extended/imports.lua',
+	'@ox_lib/init.lua',
+    'shared/*.lua'
 }
 
 dependencies {
 
 	'ox_lib',
-	'ox_inventory'
+	'ox_target'
 }
